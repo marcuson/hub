@@ -1,4 +1,0 @@
----
-title: Tools
----
-# Bash scripts
