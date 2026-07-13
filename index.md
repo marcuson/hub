@@ -1,4 +1,5 @@
 ---
-title: Marcuson hub
+standard_page:
+  title: Marcuson hub
+  body: 1. [Tools](/pages/tools)
 ---
-1. [Tools](/hub/pages/tools)
