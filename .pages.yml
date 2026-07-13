@@ -1,9 +1,9 @@
 media: media
-content:
-  - name: index
-    label: Home Page
-    type: file
-    path: index.md
+
+components:
+  standard_page:
+    type: object
+    label: Standard page
     fields:
       - name: title
         label: Page Title
@@ -11,12 +11,34 @@ content:
       - name: body
         label: Main Content
         type: rich-text
+        
+content:
+  - name: config
+    label: Config
+    type: group
+    path: ""
+    items:
+      - name: redirects
+        label: Redirects
+        path: _redirects
+        type: file
+    
+  - name: index
+    label: Home Page
+    type: file
+    path: index.md
+    fields:
+      - name: standard_page
+        component: standard_page
+        label: Page data
   - name: pages
     label: Pages
     type: collection
     path: pages
+    filename: "{primary}.md"
     fields:
       - name: title
         type: string
       - name: body
         type: rich-text
+    
