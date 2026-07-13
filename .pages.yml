@@ -16,7 +16,6 @@ content:
   - name: config
     label: Config
     type: group
-    path: ""
     items:
       - name: redirects
         label: Redirects
