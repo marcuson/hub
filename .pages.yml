@@ -5,6 +5,7 @@ content:
     type: collection
     path: docs
     fields:
+    
       - name: title
         type: string
       - name: body
