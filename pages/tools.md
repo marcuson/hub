@@ -3,4 +3,4 @@ title: Tools
 ---
 # Bash scripts
 
-[test](/tools/test)
+[test](/pages/tools/test)
