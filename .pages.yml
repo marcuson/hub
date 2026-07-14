@@ -21,6 +21,11 @@ content:
         label: Redirects
         path: _redirects
         type: file
+      - name: config
+        label: Jekyll config
+        path: _config.yml
+        type: file
+        format: yaml
     
   - name: index
     label: Home Page
@@ -30,14 +35,14 @@ content:
       - name: standard_page
         component: standard_page
         label: Page data
+        
   - name: pages
     label: Pages
     type: collection
     path: pages
     filename: "{primary}.md"
     fields:
-      - name: title
-        type: string
-      - name: body
-        type: rich-text
+      - name: standard_page
+        component: standard_page
+        label: Page data
     
