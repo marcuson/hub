@@ -3,7 +3,7 @@ media: media
 components:
   standard_page:
     type: object
-    label: Standard page
+    label: Standard page data
     fields:
       - name: title
         label: Page Title
@@ -34,7 +34,7 @@ content:
     fields:
       - name: standard_page
         component: standard_page
-        label: Page data
+        type: component
         
   - name: pages
     label: Pages
@@ -44,5 +44,4 @@ content:
     fields:
       - name: standard_page
         component: standard_page
-        label: Page data
     
