@@ -17,15 +17,15 @@ content:
     label: Config
     type: group
     items:
-      - name: redirects
-        label: Redirects
-        path: _redirects
-        type: file
       - name: config
         label: Jekyll config
         path: _config.yml
         type: file
         format: yaml
+      - name: redirects
+        label: Redirects
+        path: _redirects
+        type: file
     
   - name: index
     label: Home Page
