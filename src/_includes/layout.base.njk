@@ -1,0 +1,53 @@
+{% include "css.base.njk" %}
+{% include "js.base.njk" %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if env.name != "dev" %}
+			<base href="{{ site.url }}/">
+		{% endif %}
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="canonical" href={{ page.url | url }}>
+
+		<link rel="stylesheet" href="{% getBundleFileUrl "cssbase" %}">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96"/>
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"/>
+		<link rel="shortcut icon" href="/assets/favicon/favicon.ico"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"/>
+		<meta name="apple-mobile-web-app-title" content="Marcuson hub"/>
+		<link rel="manifest" href="/assets/favicon/site.webmanifest"/>
+
+		<title>
+			{% if page.url != "/" %}{{ title | escape }} | {% endif %}{{site.name}}
+		</title>
+	</head>
+	<body>
+		<div class="layout-wrapper">
+			<header class="header">
+				<div class="header__content">
+					<h1 class="site-title">
+						<a href={{ "/" | url }}>
+							{{site.name}}
+						</a>
+					</h1>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="main__content">
+					{{ content | safe }}
+				</div>
+			</main>
+		</div>
+
+		<script src="{% getBundleFileUrl "jsbase" %}" defer></script>
+	</body>
+</html>

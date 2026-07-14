@@ -1,0 +1,32 @@
+.header {
+	max-width: none;
+	width: 100%;
+	text-transform: uppercase;
+	margin-bottom: var(--layout-section-margin);
+}
+
+.header__content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--layout-max-width);
+	padding: var(--layout-section-padding);
+	margin-top: var(--layout-section-margin);
+	border-bottom: 1px solid var(--background-light);
+}
+
+.site-title {
+	font-size: var(--text-xl);
+}
+
+.site-title a {
+	color: var(--color);
+	text-decoration: none;
+}
+
+.site-title a:hover {
+	color: var(--color-accent);
+}

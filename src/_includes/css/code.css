@@ -1,0 +1,30 @@
+.copy-code,
+.copy-code__btn {
+	--abs-pos: 0.25rem;
+}
+
+pre.copy-code {
+	position: sticky;
+	padding-top: 1.8rem;
+}
+
+.copy-code__btn {
+	position: absolute;
+	top: var(--abs-pos);
+	right: var(--abs-pos);
+	padding: var(--abs-pos) calc(var(--abs-pos) * 2);
+	font-size: var(--text-sm);
+	background: var(--background-70);
+	color: var(--color);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	z-index: 3;
+	transition: background-color 160ms ease;
+	box-shadow: 0 1px 2px var(--color-10);
+	font-weight: 600;
+}
+
+.copy-code__btn:hover {
+	background: var(--background);
+}

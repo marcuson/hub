@@ -1,0 +1,15 @@
+.main {
+	width: 100%;
+	max-width: none;
+	margin-bottom: var(--layout-section-margin);
+}
+
+.main__content {
+	display: flex;
+	flex-direction: column;
+	padding: var(--layout-section-padding);
+	min-width: 0;
+	max-width: var(--layout-max-width);
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,15 @@
+:root {
+	--background: rgb(255, 255, 254);
+	--background-light: rgb(230, 230, 230);
+	--background-70: rgba(255, 255, 254, 0.7);
+
+	--color: rgb(41, 41, 41);
+	--color-accent: #0074d9;
+	--color-80: rgba(41, 41, 41, 0.8);
+	--color-30: rgba(41, 41, 41, 0.3);
+	--color-10: rgba(41, 41, 41, 0.1);
+
+	--layout-section-margin: 2rem;
+	--layout-section-padding: 1rem;
+	--layout-max-width: 48.75rem;
+}
