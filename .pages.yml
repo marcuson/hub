@@ -34,7 +34,7 @@ content:
     fields:
       - name: standard_page
         component: standard_page
-        type: component
+        type: standard_page
         
   - name: pages
     label: Pages
