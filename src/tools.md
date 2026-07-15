@@ -6,4 +6,4 @@ title: Tools
 Here are some useful tools you should install on your system.
 
 - [basher](https://github.com/basherpm/basher): Bash scripts package manager.
-- [uv](https://docs.astral.sh): Python package and project manager.
+- [uv](https://docs.astral.sh/uv/): Python package and project manager.
