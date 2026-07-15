@@ -4,7 +4,7 @@ title: Scripts
 ---
 # {{ title }}
 Here are some useful script repositories and how to install them on your system. Script installers are made to be compatible with most Linux and
-Android (Termux) setups.
+Android (Termux) setups. Windows support is best effort.
 
 ## Bash scripts
 Prerequisites:
@@ -23,7 +23,7 @@ Prerequisites:
 
 Install useful Python scripts via this simple command:
 ```bash
-uvx https://raw.githubusercontent.com/marcuson/python-scripts/refs/heads/main/install.py
+uv run https://raw.githubusercontent.com/marcuson/python-scripts/refs/heads/main/install.py
 ```
 
 For more info on the scripts themselves check the [Git repo](https://github.com/marcuson/python-scripts).
