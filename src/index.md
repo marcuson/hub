@@ -5,4 +5,5 @@ title: Marcuson hub
 
 # Home
 
+- [Tools](/tools)
 - [Scripts](/scripts)
