@@ -26,17 +26,12 @@ export default defineConfig((eleventyConfig) => {
 		outputFileExtension: "js",
 		toFileDirectory: "assets/bundles",
 		transforms: [
-			// async function (content) {
-			// 	let { type: bundleName, page } = this;
-			// 	let result = await postcss([postcssNested, cssnano]).process(content, { from: page.inputPath, to: null });
-			// 	return result.css;
-			// },
+			// FIXME: Add minification for JS bundles
 		],
 	});
 
 	eleventyConfig.setInputDirectory("src");
 	eleventyConfig.addPassthroughCopy({
-		"src/_redirects": "_redirects",
 		"src/assets": "assets",
 	});
 });
