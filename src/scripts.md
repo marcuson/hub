@@ -23,7 +23,7 @@ Prerequisites:
 
 Install useful Python scripts via this simple command:
 ```bash
-uv run https://raw.githubusercontent.com/marcuson/python-scripts/refs/heads/main/install.py
+uvx https://github.com/marcuson/python-scripts.git
 ```
 
 For more info on the scripts themselves check the [Git repo](https://github.com/marcuson/python-scripts).
